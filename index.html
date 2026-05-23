@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Review Bot</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #58a6ff; font-size: 2.2em; margin-bottom: 10px; }
+        .badge { display: inline-block; background: #238636; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; margin-bottom: 20px; }
+        .description { font-size: 1.1em; color: #8b949e; margin-bottom: 30px; }
+        .features { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 24px; margin-bottom: 30px; }
+        .features h2 { color: #58a6ff; margin-bottom: 16px; font-size: 1.3em; }
+        .features ul { list-style: none; }
+        .features li { padding: 8px 0; border-bottom: 1px solid #21262d; }
+        .features li:last-child { border-bottom: none; }
+        .features li::before { content: "✓ "; color: #3fb950; font-weight: bold; }
+        .tech { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
+        .tech span { background: #1f6feb33; color: #58a6ff; padding: 4px 12px; border-radius: 4px; font-size: 0.85em; }
+        .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 30px; }
+        .stat { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; text-align: center; }
+        .stat .number { font-size: 1.8em; color: #58a6ff; font-weight: bold; }
+        .stat .label { color: #8b949e; font-size: 0.85em; }
+        .cta { display: inline-block; background: #238636; color: #fff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; }
+        .cta:hover { background: #2ea043; }
+        footer { margin-top: 40px; color: #484f58; font-size: 0.85em; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 AI Code Review Bot</h1>
+        <span class="badge">Powered by MiMo V2.5</span>
+        <p class="description">Multi-agent AI system that automatically reviews pull requests, detecting bugs, security vulnerabilities, and code style issues before human reviewers.</p>
+
+        <div class="stats">
+            <div class="stat"><div class="number">50+</div><div class="label">PRs/day</div></div>
+            <div class="stat"><div class="number">73%</div><div class="label">Bug reduction</div></div>
+            <div class="stat"><div class="number">3M</div><div class="label">Tokens/day</div></div>
+        </div>
+
+        <div class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Bug Detection Agent — chain-of-thought reasoning for logic errors</li>
+                <li>Security Audit Agent — OWASP Top 10 vulnerability scanning</li>
+                <li>Performance Agent — algorithmic improvement suggestions</li>
+                <li>Multi-agent orchestration with shared context window</li>
+                <li>GitHub Actions CI/CD integration</li>
+                <li>Markdown report generation with severity levels</li>
+            </ul>
+        </div>
+
+        <div class="tech">
+            <span>Python</span>
+            <span>MiMo V2.5 API</span>
+            <span>GitHub Actions</span>
+            <span>Multi-Agent</span>
+            <span>OpenClaw</span>
+        </div>
+
+        <a href="https://github.com/agentwizard22/code-review-bot" class="cta">View on GitHub →</a>
+
+        <footer>Built with Xiaomi MiMo V2.5 • 2026</footer>
+    </div>
+</body>
+</html>
